@@ -1,10 +1,53 @@
+
+<!DOCTYPE html>
 <html>
-<title>JamesMonkey.com</title>
-<body>
-<h1>Welcome to JamesMonkey.com</h1>
+  <head>
+    <title>JamesMonkey - Diamond Blowup YouTube channel</title>
 
-Coming soon: my YouTube channel and other cool things I like to make.
+	<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+	<script src="./js/youmax.js"></script>
+	<link rel="stylesheet" href="./css/youmax.css"/>
+
+	<style>
+
+      body {
+        font-family: Calibri;
+        font-size: 14px;
+		text-align:center;
+      }
+
+	  /*#youmax{width:100% !important;}
+	  #youmax-video-list-div{background-color:rgb(53,53,53) !important;}
+	  #youmax-tabs{background-color:rgb(53,53,53) !important;}
+	  #youmax-header{background-color:black !important;}
+	  .youmax-video-list-title{color:white !important;}
+	  .youmax-video-list-views{color:green !important;}*/
 
 
-</body>
+	</style>
+
+	</head>
+  <body>
+	<H1>Diamond Blowup by JamesMonkey</H1>
+
+<div id="youmax"></div>
+
+<br/><br/>
+
+
+	<script>
+		$('#youmax').youmax({
+			apiKey:'AIzaSyBg8jElToTSwrhllixYLbkvmhXsCu0dQ8M',
+			youTubeChannelURL:"https://www.youtube.com/channel/UCHw2qutIM8minoaJnVzhr7Q",
+			youmaxDefaultTab:"UPLOADS",
+			youmaxColumns:3,
+			showVideoInLightbox:false,
+			maxResults:15,
+
+		});
+
+
+	</script>
+
+  </body>
 </html>
